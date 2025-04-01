@@ -1,4 +1,4 @@
-.container {
+#container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +7,7 @@
     gap: 30px;
     width: fit-content;
     margin: 0 auto;
-    border: gray 0.5px solid;
+    border: gray 2px solid;
     border-radius: 20px;
     padding: 0 30px;
 }
