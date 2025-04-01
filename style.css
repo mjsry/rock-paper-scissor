@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    width: fit-content;
+    margin: 0 auto;
+    border: gray 0.5px solid;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    position: relative;
+}
+
+#computer_items {
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+#user_items {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+#computer_score {
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    font-family: "Roboto Thin", serif;
+    font-size: 40px;
+}
+
+#user_score {
+    position: absolute;
+    right: 400px;
+    bottom: 150px;
+    font-family: "Roboto Thin", serif;
+    font-size: 40px;
+}
+
+#user_items #rock {
+    position: relative;
+    transform: translateY(40px);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+#user_items #paper {
+    position: relative;
+    transform: translateY(102px);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+#user_items #scissor {
+    position: relative;
+    transform: translateY(60px);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+#computer_items #rock_r {
+    position: relative;
+    transform: translateY(-40px);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+#computer_items #paper_r {
+    position: relative;
+    transform: translateY(-102px);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+#computer_items #scissor_r {
+    position: relative;
+    transform: translateY(-60px);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    padding: 0;
+    margin: 0;
+}
